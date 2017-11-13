@@ -19,12 +19,9 @@ In addition, the file queries.txt contains the sequence of arrivals of the keywo
 For this project, we implement the Greedy, MSVV, and Balance algorithms as described below. The code also calculates the revenue for the given keywords list (in that order) as well as calculate an estimation of a competitive ratio. The competitive ratio is defined as the minimum of 𝐴𝐿𝐺/𝑂𝑃𝑇, where 𝐴𝐿𝑇 is the mean revenue of your algorithm over all possible input sequences and 𝑂𝑃𝑇 is the optimal matching. To estimate the value of 𝐴𝐿𝐺, we simply compute the revenue over 100 random permutations of the input sequence and calculate the mean value.
 
 ### Project Details:
-● Use either python or R for your implementation. Your file should be called either adwords.py or adwords.R
-
-● The code takes one argument as input, which will denote which algorithm to run. The input arguments will be given as: greedy, balance, or msvv.
-
-● The code writes to the console the calculated revenue using the chosen algorithm on queries.txt as given as well as the estimation of the competitive ratio. We simply print these two numbers on two separate lines.
-
+● Use either python or R for your implementation. Your file should be called either adwords.py or adwords.R  
+● The code takes one argument as input, which will denote which algorithm to run. The input arguments will be given as: greedy, balance, or msvv.  
+● The code writes to the console the calculated revenue using the chosen algorithm on queries.txt as given as well as the estimation of the competitive ratio. We simply print these two numbers on two separate lines.  
 ● NOTE: At some points in the algorithms below, two or more advertisers will tie for an advertisement slot. In this case, we choose the advertiser with the smallest ID.
 
 ### Greedy:
