@@ -45,3 +45,15 @@ b) Else, match 𝑞 to the neighbor 𝑖 that has the largest 𝑏𝑖𝑞∗�
 a) If all neighbors have spent their full budgets  
 ⋅⋅i) continue  
 b) Else, match 𝑞 to the neighbor with the highest unspent budget.   
+
+
+### Example Output:
+Using Python with random.seed(0) for shuffling queries, the following was obtained.
+
+| Command        | Revenue           | Competitive Ratio  |
+| ------------- |:-------------:| -----:|
+|python adwords.py greedy     |16731.40|0.87|
+|python adwords.py mssv      |17671.00      |0.92|
+|python adwords.py balance | 12320.20     |0.64|
+
+
