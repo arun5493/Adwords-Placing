@@ -20,25 +20,28 @@ For this project, we implement the Greedy, MSVV, and Balance algorithms as descr
 
 ### Project Details:
 ● Use either python or R for your implementation. Your file should be called either adwords.py or adwords.R
+
 ● The code takes one argument as input, which will denote which algorithm to run. The input arguments will be given as: greedy, balance, or msvv.
+
 ● The code writes to the console the calculated revenue using the chosen algorithm on queries.txt as given as well as the estimation of the competitive ratio. We simply print these two numbers on two separate lines.
+
 ● NOTE: At some points in the algorithms below, two or more advertisers will tie for an advertisement slot. In this case, we choose the advertiser with the smallest ID.
 
 ### Greedy:
-1) For each query 𝑞
-  a) If all neighbors (bidding advertisers for 𝑞) have spent their full budgets
-    i) continue
-  b) Else, match 𝑞 to the neighbor with the highest bid.
+1) For each query 𝑞  
+  a) If all neighbors (bidding advertisers for 𝑞) have spent their full budgets  
+    ⋅⋅i) continue  
+  b) Else, match 𝑞 to the neighbor with the highest bid.  
 
 ### MSVV:
-Let 𝑥𝑢 be the fraction of advertiser's budget that has been spent up and 𝜓(𝑥𝑢) = 1−𝑒(𝑥𝑢−1).
-1) For each query 𝑞
-  a) If all neighbors have spent their full budgets
-    i) continue
-  b) Else, match 𝑞 to the neighbor 𝑖 that has the largest 𝑏𝑖𝑞∗𝜓(𝑥𝑢) value.
+Let 𝑥𝑢 be the fraction of advertiser's budget that has been spent up and 𝜓(𝑥𝑢) = 1−𝑒^(𝑥𝑢−1).  
+1) For each query 𝑞  
+a) If all neighbors have spent their full budgets  
+⋅⋅i) continue  
+b) Else, match 𝑞 to the neighbor 𝑖 that has the largest 𝑏𝑖𝑞∗𝜓(𝑥𝑢) value.  
 
 ### Balance:
-1) For each query 𝑞
-  a) If all neighbors have spent their full budgets
-    i) continue
-  b) Else, match 𝑞 to the neighbor with the highest unspent budget. 
+1) For each query 𝑞  
+a) If all neighbors have spent their full budgets  
+⋅⋅i) continue  
+b) Else, match 𝑞 to the neighbor with the highest unspent budget.   
